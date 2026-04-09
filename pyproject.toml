@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "Agent memory that actually works — human-like learning, forgetting, and retrieval for AI agents"
 readme = "README.md"
 license = "MIT"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 authors = [{ name = "Krrish Mittal" }]
 keywords = ["ai", "agents", "memory", "llm", "mcp"]
 classifiers = [
@@ -32,6 +32,7 @@ agentmem = "agentmem.mcp_server:main"
 
 [project.urls]
 Homepage = "https://github.com/phoenix-assistant/agent-memory-that-works"
+Repository = "https://github.com/phoenix-assistant/agent-memory-that-works"
 Issues = "https://github.com/phoenix-assistant/agent-memory-that-works/issues"
 
 [tool.ruff]
