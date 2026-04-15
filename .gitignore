@@ -9,3 +9,5 @@ build/
 .ruff_cache/
 *.db
 .venv/
+node_modules/
+dist/

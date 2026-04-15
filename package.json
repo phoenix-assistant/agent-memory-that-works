@@ -1,0 +1,39 @@
+{
+  "name": "@phoenixaihub/agent-memory",
+  "version": "1.0.0",
+  "description": "Practical persistent memory for AI coding agents — dedup, decay, relevance scoring",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "agent-mem": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest --forceExit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["agent", "memory", "ai", "coding-agent", "context", "dedup", "retrieval"],
+  "author": "phoenixaihub",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phoenix-assistant/agent-memory-that-works"
+  },
+  "files": ["dist"],
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^20.11.0",
+    "@types/better-sqlite3": "^7.6.8",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.0",
+    "@types/jest": "^29.5.0"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.0.0"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "testMatch": ["**/tests/**/*.test.ts"]
+  }
+}
